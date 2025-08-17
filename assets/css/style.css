@@ -12,146 +12,147 @@
 body {
   background: #fff;
   color: #000;
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 15px;
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0,'wght' 600,'GRAD' 0,'opsz' 24;
+  font-variation-settings: 'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24;
   font-size: inherit;
   vertical-align: middle;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 /* Header */
 .header {
   text-align: center;
-  padding: 1.5rem 0 1rem;
-  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
 }
 .header-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
-.live-indicator { margin-top: .5rem; }
 .live-badge {
+  margin-top: .6rem;
+  font-size: .8rem;
+  font-weight: 700;
+  color: red;
   display: inline-flex;
   align-items: center;
   gap: .3rem;
-  font-size: .8rem;
-  font-weight: 700;
 }
-.live-badge .material-symbols-outlined {
-  color: red;
-  animation: pulse 1.5s infinite;
-}
-@keyframes pulse {0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes pulse {0%,100%{opacity:1}50%{opacity:.3}}
+.live-badge .material-symbols-outlined {animation:pulse 1.2s infinite}
 
-/* Section Titles */
-.section-title {
-  font-size: 1rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: .3rem;
-  margin: 1rem 0 .5rem;
-}
-
-/* League selector */
-.league-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-}
-.league-buttons button {
-  border: 1px solid #000;
-  background: transparent;
-  padding: .3rem .6rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.league-buttons button.active,
-.league-buttons button:hover {
-  background: #000;
-  color: #fff;
-}
-
-/* Filters */
-.filters { margin-top: 1rem; }
-.filter-group { display: grid; gap: 1rem; }
+/* Section titles */
+.section-title,
 .filter-title {
-  font-size: .9rem;
+  font-size: .95rem;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: .3rem;
-  margin-bottom: .4rem;
-}
-.filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .4rem;
-}
-.filter-btn {
-  border: 1px solid #000;
-  background: transparent;
-  padding: .3rem .6rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.filter-btn.active,
-.filter-btn:hover {
-  background: #000;
-  color: #fff;
+  gap: .35rem;
+  margin: 1.5rem 0 .6rem;
 }
 
-/* View toggle */
+/* Buttons */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+.league-buttons,
+.filter-buttons,
 .view-toggle {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
   gap: .5rem;
-  margin: 1rem 0;
 }
+.league-buttons button,
+.filter-btn,
 .toggle-btn {
   border: 1px solid #000;
-  background: transparent;
-  padding: .3rem .6rem;
+  padding: .35rem .7rem;
   font-weight: 600;
-  cursor: pointer;
+  transition: background .2s,color .2s;
 }
+.league-buttons button.active,
+.filter-btn.active,
 .toggle-btn.active,
+.league-buttons button:hover,
+.filter-btn:hover,
 .toggle-btn:hover {
   background: #000;
   color: #fff;
 }
 
-/* Transfer count */
+/* Count bar */
 .transfer-count {
-  margin-top: 1rem;
-  border-top: 1px solid #000;
-  padding-top: .5rem;
+  margin-top: 1.5rem;
+  padding-top: .8rem;
+  border-top: 1px solid #ddd;
 }
 .count-info {
   display: flex;
   justify-content: space-between;
+  font-size: .9rem;
   font-weight: 600;
+}
+
+/* Timeline view */
+.transfers-grid.timeline {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.timeline .transfer-item {
+  display: flex;
+  gap: .75rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+.timeline .status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: .35rem;
+}
+.timeline .status-dot.completed {background:#000;}
+.timeline .status-dot.pending {background:#666;}
+.timeline .status-dot.rumored {background:#aaa;}
+.timeline .transfer-content { flex: 1; }
+.timeline .player-line {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.timeline .details-line {
+  font-size: .85rem;
+  color: #444;
+  margin-top: .15rem;
+}
+.timeline .meta-line {
+  font-size: .75rem;
+  color: #777;
+  margin-top: .3rem;
 }
 
 /* Scoreboard view */
 .transfers-grid.scoreboard {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: .75rem;
-  margin-top: 1rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 .transfer-card {
-  border: 1px solid #000;
-  padding: .75rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
 }
 .player-name {
   font-size: 1.1rem;
@@ -159,78 +160,37 @@ body {
 }
 .player-details {
   font-size: .8rem;
-  color: #333;
+  color: #555;
 }
 .transfer-movement {
   display: flex;
   justify-content: space-between;
-  margin: .5rem 0;
+  margin: .6rem 0;
   font-weight: 600;
 }
 .transfer-footer {
   display: flex;
   justify-content: space-between;
   font-size: .75rem;
-  color: #555;
-}
-
-/* Timeline view */
-.transfers-grid.timeline {
-  display: flex;
-  flex-direction: column;
-}
-.timeline .transfer-item {
-  display: flex;
-  gap: .6rem;
-  padding: .75rem 0;
-  border-bottom: 1px solid #ddd;
-}
-.timeline .status-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-top: .3rem;
-}
-.timeline .status-dot.completed {background:#000;}
-.timeline .status-dot.pending {background:#666;}
-.timeline .status-dot.rumored {background:#999;}
-.timeline .transfer-content { flex: 1; }
-.timeline .player-line {
-  font-weight: 600;
-  font-size: .95rem;
-}
-.timeline .details-line {
-  font-size: .8rem;
-  color: #444;
-}
-.timeline .meta-line {
-  font-size: .7rem;
   color: #666;
-  margin-top: .2rem;
 }
 
 /* No results */
 .no-results {
   text-align: center;
-  margin: 2rem 0;
-}
-.no-results-icon { font-size: 2rem; margin-bottom: .4rem; }
-.no-results-title {
-  font-weight: 700;
-  font-size: 1rem;
-}
-.no-results-subtitle {
-  font-size: .85rem;
+  margin: 3rem 0;
   color: #444;
 }
-.hidden { display: none; }
+.no-results-icon { font-size: 2rem; margin-bottom: .5rem; }
+.no-results-title { font-weight: 700; font-size: 1rem; }
+.no-results-subtitle { font-size: .85rem; }
 
 /* Footer */
 .footer {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding: 1rem;
   text-align: center;
-  border-top: 1px solid #000;
   font-size: .75rem;
-  font-weight: 600;
+  border-top: 1px solid #ddd;
+  color: #444;
 }
