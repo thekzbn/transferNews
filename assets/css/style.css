@@ -13,6 +13,7 @@ body {
   background: #fff;
   color: #000;
   line-height: 1.5;
+  font-size: 15px;
 }
 
 .material-symbols-outlined {
@@ -27,6 +28,7 @@ body {
   padding: 1rem;
 }
 
+/* Header */
 .header {
   text-align: center;
   padding: 1.5rem 0 1rem;
@@ -36,8 +38,8 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
 }
+.live-indicator { margin-top: .5rem; }
 .live-badge {
-  margin-top: .5rem;
   display: inline-flex;
   align-items: center;
   gap: .3rem;
@@ -50,34 +52,45 @@ body {
 }
 @keyframes pulse {0%,100%{opacity:1}50%{opacity:.4}}
 
-.view-toggle {
+/* Section Titles */
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
   display: flex;
-  justify-content: flex-end;
-  gap: .5rem;
-  margin: 1rem 0;
+  align-items: center;
+  gap: .3rem;
+  margin: 1rem 0 .5rem;
 }
-.toggle-btn {
+
+/* League selector */
+.league-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.league-buttons button {
   border: 1px solid #000;
   background: transparent;
   padding: .3rem .6rem;
   font-weight: 600;
   cursor: pointer;
 }
-.toggle-btn.active,
-.toggle-btn:hover {
+.league-buttons button.active,
+.league-buttons button:hover {
   background: #000;
   color: #fff;
 }
 
+/* Filters */
 .filters { margin-top: 1rem; }
-.filter-section { margin-bottom: 1rem; }
+.filter-group { display: grid; gap: 1rem; }
 .filter-title {
   font-size: .9rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: .3rem;
-  margin-bottom: .5rem;
+  margin-bottom: .4rem;
 }
 .filter-buttons {
   display: flex;
@@ -97,6 +110,27 @@ body {
   color: #fff;
 }
 
+/* View toggle */
+.view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+.toggle-btn {
+  border: 1px solid #000;
+  background: transparent;
+  padding: .3rem .6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Transfer count */
 .transfer-count {
   margin-top: 1rem;
   border-top: 1px solid #000;
@@ -108,7 +142,7 @@ body {
   font-weight: 600;
 }
 
-/* Scoreboard */
+/* Scoreboard view */
 .transfers-grid.scoreboard {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -140,7 +174,7 @@ body {
   color: #555;
 }
 
-/* Timeline */
+/* Timeline view */
 .transfers-grid.timeline {
   display: flex;
   flex-direction: column;
@@ -191,6 +225,7 @@ body {
 }
 .hidden { display: none; }
 
+/* Footer */
 .footer {
   margin-top: 1.5rem;
   padding: 1rem;
