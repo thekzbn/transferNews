@@ -1,170 +1,581 @@
 {
-  "leagues": [
-    { "id": "epl", "name": "Premier League", "country": "England", "shortName": "EPL" },
-    { "id": "laliga", "name": "La Liga", "country": "Spain", "shortName": "LAL" },
-    { "id": "bundesliga", "name": "Bundesliga", "country": "Germany", "shortName": "BUN" },
-    { "id": "seriea", "name": "Serie A", "country": "Italy", "shortName": "SER" },
-    { "id": "ligue1", "name": "Ligue 1", "country": "France", "shortName": "L1" },
-    { "id": "eredivisie", "name": "Eredivisie", "country": "Netherlands", "shortName": "ERE" },
-    { "id": "primeira", "name": "Primeira Liga", "country": "Portugal", "shortName": "PRI" }
-  ],
-  "transfers": {
-    "epl": [
-      {
-        "id": "1",
-        "playerName": "Kylian Mbappé",
-        "fromTeam": "PSG",
-        "toTeam": "Real Madrid",
-        "fee": "FREE",
-        "position": "RW",
-        "age": 25,
-        "nationality": "FRA",
-        "date": "JUL 2024",
-        "type": "permanent",
-        "status": "completed"
-      },
-      {
-        "id": "2",
-        "playerName": "Erling Haaland",
-        "fromTeam": "Man City",
-        "toTeam": "Barcelona",
-        "fee": "€180M",
-        "position": "ST",
-        "age": 24,
-        "nationality": "NOR",
-        "date": "JAN 2025",
-        "type": "permanent",
-        "status": "rumored"
-      },
-      {
-        "id": "3",
-        "playerName": "Jadon Sancho",
-        "fromTeam": "Man United",
-        "toTeam": "Juventus",
-        "fee": "€40M",
-        "position": "LW",
-        "age": 24,
-        "nationality": "ENG",
-        "date": "AUG 2024",
-        "type": "loan",
-        "status": "completed"
-      }
+    "leagues": [
+        {
+            "id": "epl",
+            "name": "Premier League",
+            "country": "England",
+            "shortName": "EPL"
+        },
+        {
+            "id": "laliga",
+            "name": "La Liga",
+            "country": "Spain",
+            "shortName": "LAL"
+        },
+        {
+            "id": "bundesliga",
+            "name": "Bundesliga",
+            "country": "Germany",
+            "shortName": "BUN"
+        },
+        {
+            "id": "seriea",
+            "name": "Serie A",
+            "country": "Italy",
+            "shortName": "SER"
+        },
+        {
+            "id": "ligue1",
+            "name": "Ligue 1",
+            "country": "France",
+            "shortName": "L1"
+        },
+        {
+            "id": "eredivisie",
+            "name": "Eredivisie",
+            "country": "Netherlands",
+            "shortName": "ERE"
+        },
+        {
+            "id": "primeira",
+            "name": "Primeira Liga",
+            "country": "Portugal",
+            "shortName": "PRI"
+        },
+        {
+            "id": "saudi",
+            "name": "Saudi Pro League",
+            "country": "Saudi Arabia",
+            "shortName": "SPL"
+        },
+        {
+            "id": "mls",
+            "name": "Major League Soccer",
+            "country": "USA/Canada",
+            "shortName": "MLS"
+        },
+        {
+            "id": "brasileirao",
+            "name": "Campeonato Brasileiro Série A",
+            "country": "Brazil",
+            "shortName": "BRA"
+        },
+        {
+            "id": "scottish",
+            "name": "Scottish Premiership",
+            "country": "Scotland",
+            "shortName": "SCO"
+        },
+        {
+            "id": "belgian",
+            "name": "Belgian Pro League",
+            "country": "Belgium",
+            "shortName": "BEL"
+        },
+        {
+            "id": "turkish",
+            "name": "Süper Lig",
+            "country": "Türkiye",
+            "shortName": "SL"
+        },
+        {
+            "id": "other",
+            "name": "Other Leagues",
+            "country": "Various",
+            "shortName": "OTH"
+        },
+        {
+            "id": "unaffiliated",
+            "name": "Unaffiliated",
+            "country": "N/A",
+            "shortName": "UNA"
+        }
     ],
-    "laliga": [
-      {
-        "id": "4",
-        "playerName": "Pedri González",
-        "fromTeam": "Barcelona",
-        "toTeam": "Man City",
-        "fee": "€120M",
-        "position": "CM",
-        "age": 22,
-        "nationality": "ESP",
-        "date": "JUN 2025",
-        "type": "permanent",
-        "status": "pending"
-      },
-      {
-        "id": "5",
-        "playerName": "Vinícius Jr.",
-        "fromTeam": "Real Madrid",
-        "toTeam": "PSG",
-        "fee": "€200M",
-        "position": "LW",
-        "age": 24,
-        "nationality": "BRA",
-        "date": "JUL 2025",
-        "type": "permanent",
-        "status": "rumored"
-      }
-    ],
-    "bundesliga": [
-      {
-        "id": "6",
-        "playerName": "Jamal Musiala",
-        "fromTeam": "Bayern Munich",
-        "toTeam": "Liverpool",
-        "fee": "€90M",
-        "position": "CAM",
-        "age": 21,
-        "nationality": "GER",
-        "date": "AUG 2024",
-        "type": "permanent",
-        "status": "completed"
-      },
-      {
-        "id": "7",
-        "playerName": "Jude Bellingham",
-        "fromTeam": "Real Madrid",
-        "toTeam": "Man City",
-        "fee": "€150M",
-        "position": "CM",
-        "age": 21,
-        "nationality": "ENG",
-        "date": "JAN 2025",
-        "type": "permanent",
-        "status": "rumored"
-      }
-    ],
-    "seriea": [
-      {
-        "id": "8",
-        "playerName": "Rafael Leão",
-        "fromTeam": "AC Milan",
-        "toTeam": "Chelsea",
-        "fee": "€70M",
-        "position": "LW",
-        "age": 25,
-        "nationality": "POR",
-        "date": "JAN 2025",
-        "type": "permanent",
-        "status": "pending"
-      }
-    ],
-    "ligue1": [
-      {
-        "id": "9",
-        "playerName": "Warren Zaïre-Emery",
-        "fromTeam": "PSG",
-        "toTeam": "Arsenal",
-        "fee": "€50M",
-        "position": "CM",
-        "age": 18,
-        "nationality": "FRA",
-        "date": "JUL 2025",
-        "type": "permanent",
-        "status": "rumored"
-      }
-    ],
-    "eredivisie": [
-      {
-        "id": "10",
-        "playerName": "Xavi Simons",
-        "fromTeam": "PSG",
-        "toTeam": "Ajax",
-        "fee": "€25M",
-        "position": "CAM",
-        "age": 21,
-        "nationality": "NED",
-        "date": "AUG 2024",
-        "type": "loan",
-        "status": "completed"
-      }
-    ],
-    "primeira": [
-      {
-        "id": "11",
-        "playerName": "Viktor Gyökeres",
-        "fromTeam": "Sporting CP",
-        "toTeam": "Arsenal",
-        "fee": "€60M",
-        "position": "ST",
-        "age": 26,
-        "nationality": "SWE",
-        "date": "JAN 2025",
-        "type": "permanent",
-        "status": "pending"
-      }
-    ]
-  }
+    "transfers": {
+        "epl": [
+            {
+                "id": "1",
+                "playerName": "Martín Zubimendi",
+                "fromTeam": "Real Sociedad",
+                "toTeam": "Arsenal",
+                "fee": "€70.00m",
+                "position": "DM",
+                "age": 26,
+                "nationality": "ESP",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Viktor Gyökeres",
+                "fromTeam": "Sporting CP",
+                "toTeam": "Arsenal",
+                "fee": "€65.80m",
+                "position": "CF",
+                "age": 27,
+                "nationality": "SWE",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "3",
+                "playerName": "Noni Madueke",
+                "fromTeam": "Chelsea",
+                "toTeam": "Arsenal",
+                "fee": "€56.00m",
+                "position": "RW",
+                "age": 23,
+                "nationality": "ENG",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "4",
+                "playerName": "Christian Nørgaard",
+                "fromTeam": "Brentford",
+                "toTeam": "Arsenal",
+                "fee": "€11.6M",
+                "position": "DM",
+                "age": 31,
+                "nationality": "DEN",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "5",
+                "playerName": "Kepa Arrizabalaga",
+                "fromTeam": "Chelsea",
+                "toTeam": "Arsenal",
+                "fee": "€5.8M",
+                "position": "GK",
+                "age": 30,
+                "nationality": "ESP",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "6",
+                "playerName": "Cristhian Mosquera",
+                "fromTeam": "Valencia",
+                "toTeam": "Arsenal",
+                "fee": "€15M",
+                "position": "CB",
+                "age": 21,
+                "nationality": "ESP",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "7",
+                "playerName": "Evann Guessand",
+                "fromTeam": "OGC Nice",
+                "toTeam": "Aston Villa",
+                "fee": "€30M",
+                "position": "CF",
+                "age": 24,
+                "nationality": "FRA",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "8",
+                "playerName": "Yasin Özcan",
+                "fromTeam": "Kasimpasa",
+                "toTeam": "Aston Villa",
+                "fee": "€7M",
+                "position": "CB",
+                "age": 19,
+                "nationality": "TUR",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "9",
+                "playerName": "Bafodé Diakité",
+                "fromTeam": "LOSC Lille",
+                "toTeam": "Bournemouth",
+                "fee": "€35M",
+                "position": "CB",
+                "age": 24,
+                "nationality": "FRA",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "10",
+                "playerName": "Djordje Petrovic",
+                "fromTeam": "Chelsea",
+                "toTeam": "Bournemouth",
+                "fee": "€28.9M",
+                "position": "GK",
+                "age": 25,
+                "nationality": "SRB",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "11",
+                "playerName": "Dango Ouattara",
+                "fromTeam": "Bournemouth",
+                "toTeam": "Brentford",
+                "fee": "€42.8M",
+                "position": "LW",
+                "age": 23,
+                "nationality": "BFA",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "12",
+                "playerName": "Antoni Milambo",
+                "fromTeam": "Feyenoord",
+                "toTeam": "Brentford",
+                "fee": "€20M",
+                "position": "AM",
+                "age": 20,
+                "nationality": "NED",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "laliga": [
+            {
+                "id": "1",
+                "playerName": "Trent Alexander-Arnold",
+                "fromTeam": "Liverpool",
+                "toTeam": "Real Madrid",
+                "fee": "€10.00m",
+                "position": "RB",
+                "age": 26,
+                "nationality": "ENG",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "bundesliga": [
+            {
+                "id": "1",
+                "playerName": "Luis Díaz",
+                "fromTeam": "Liverpool",
+                "toTeam": "Bayern Munich",
+                "fee": "€70.00m",
+                "position": "LW",
+                "age": 28,
+                "nationality": "COL",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "seriea": [
+            {
+                "id": "1",
+                "playerName": "Pervis Estupiñán",
+                "fromTeam": "Brighton",
+                "toTeam": "AC Milan",
+                "fee": "€17.00m",
+                "position": "LB",
+                "age": 27,
+                "nationality": "ECU",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "ligue1": [
+            {
+                "id": "1",
+                "playerName": "Tyler Morton",
+                "fromTeam": "Liverpool",
+                "toTeam": "Olympique Lyon",
+                "fee": "€10.00m",
+                "position": "DM",
+                "age": 22,
+                "nationality": "ENG",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "eredivisie": [
+            {
+                "id": "1",
+                "playerName": "Quilindschy Hartman",
+                "fromTeam": "Burnley",
+                "toTeam": "Feyenoord",
+                "fee": "€9.00m",
+                "position": "LB",
+                "age": 23,
+                "nationality": "NED",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Michael Kayode",
+                "fromTeam": "Brentford",
+                "toTeam": "Fiorentina",
+                "fee": "End of loan",
+                "position": "RB",
+                "age": 20,
+                "nationality": "ITA",
+                "date": "JUN 2025",
+                "type": "loan_return",
+                "status": "completed"
+            }
+        ],
+        "primeira": [
+            {
+                "id": "1",
+                "playerName": "João Virgínia",
+                "fromTeam": "Everton",
+                "toTeam": "Sporting CP",
+                "fee": "Free",
+                "position": "GK",
+                "age": 25,
+                "nationality": "POR",
+                "date": "JUL 2025",
+                "type": "free",
+                "status": "completed"
+            }
+        ],
+        "saudi": [
+            {
+                "id": "1",
+                "playerName": "Darwin Núñez",
+                "fromTeam": "Liverpool",
+                "toTeam": "Al-Hilal",
+                "fee": "€53.00m",
+                "position": "CF",
+                "age": 26,
+                "nationality": "URU",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "mls": [
+            {
+                "id": "1",
+                "playerName": "Heung-min Son",
+                "fromTeam": "Tottenham",
+                "toTeam": "LAFC",
+                "fee": "€22.00m",
+                "position": "LW",
+                "age": 33,
+                "nationality": "KOR",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "brasileirao": [
+            {
+                "id": "1",
+                "playerName": "Jorginho",
+                "fromTeam": "Arsenal",
+                "toTeam": "Flamengo",
+                "fee": "Free",
+                "position": "DM",
+                "age": 33,
+                "nationality": "ITA",
+                "date": "JUL 2025",
+                "type": "free",
+                "status": "completed"
+            }
+        ],
+        "scottish": [
+            {
+                "id": "1",
+                "playerName": "Kieran Tierney",
+                "fromTeam": "Arsenal",
+                "toTeam": "Celtic",
+                "fee": "Free",
+                "position": "LB",
+                "age": 28,
+                "nationality": "SCO",
+                "date": "JUL 2025",
+                "type": "free",
+                "status": "completed"
+            }
+        ],
+        "belgian": [
+            {
+                "id": "1",
+                "playerName": "Ji-soo Kim",
+                "fromTeam": "Brentford",
+                "toTeam": "1.FC Kaiserslautern",
+                "fee": "Loan",
+                "position": "CB",
+                "age": 20,
+                "nationality": "KOR",
+                "date": "JUL 2025",
+                "type": "loan",
+                "status": "completed"
+            }
+        ],
+        "turkish": [
+            {
+                "id": "1",
+                "playerName": "Nélson Semedo",
+                "fromTeam": "Wolves",
+                "toTeam": "Fenerbahce",
+                "fee": "Free",
+                "position": "RB",
+                "age": 31,
+                "nationality": "POR",
+                "date": "JUL 2025",
+                "type": "free",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Fredrik Midtsjø",
+                "fromTeam": "Stoke City",
+                "toTeam": "Galatasaray",
+                "fee": "€1.00m",
+                "position": "CM",
+                "age": 32,
+                "nationality": "NOR",
+                "date": "JUL 2025",
+                "type": "permanent",
+                "status": "completed"
+            }
+        ],
+        "other": [
+            {
+                "id": "1",
+                "playerName": "Wayne Hennessey",
+                "fromTeam": "Nottingham Forest",
+                "toTeam": "Retired",
+                "fee": "-",
+                "position": "GK",
+                "age": 38,
+                "nationality": "WAL",
+                "date": "JUL 2025",
+                "type": "retired",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Jonny Evans",
+                "fromTeam": "Manchester United",
+                "toTeam": "Retired",
+                "fee": "-",
+                "position": "CB",
+                "age": 37,
+                "nationality": "NIR",
+                "date": "JUL 2025",
+                "type": "retired",
+                "status": "completed"
+            },
+            {
+                "id": "3",
+                "playerName": "Thomas Partey",
+                "fromTeam": "Arsenal",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "DM",
+                "age": 32,
+                "nationality": "GHA",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            }
+        ],
+        "unaffiliated": [
+            {
+                "id": "1",
+                "playerName": "Takehiro Tomiyasu",
+                "fromTeam": "Arsenal",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "RB",
+                "age": 26,
+                "nationality": "JPN",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Victor Lindelöf",
+                "fromTeam": "Manchester United",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "CB",
+                "age": 30,
+                "nationality": "SWE",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            },
+            {
+                "id": "3",
+                "playerName": "Fraser Forster",
+                "fromTeam": "Tottenham Hotspur",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "GK",
+                "age": 37,
+                "nationality": "ENG",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            },
+            {
+                "id": "4",
+                "playerName": "Sergio Reguilón",
+                "fromTeam": "Tottenham Hotspur",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "LB",
+                "age": 28,
+                "nationality": "ESP",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            },
+            {
+                "id": "5",
+                "playerName": "Michail Antonio",
+                "fromTeam": "West Ham United",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "CF",
+                "age": 35,
+                "nationality": "JAM",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            },
+            {
+                "id": "6",
+                "playerName": "Lukasz Fabianski",
+                "fromTeam": "West Ham United",
+                "toTeam": "Without Club",
+                "fee": "-",
+                "position": "GK",
+                "age": 40,
+                "nationality": "POL",
+                "date": "JUL 2025",
+                "type": "release",
+                "status": "completed"
+            }
+        ]
+    }
 }
