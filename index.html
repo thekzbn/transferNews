@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFER WINDOW || thekzbn</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1 class="header-title">TRANSFER WINDOW</h1>
+                <div class="live-indicator">
+                    <div class="live-badge">
+                        <span class="material-symbols-outlined">radio_button_checked</span>
+                        LIVE UPDATES
+                    </div>
+                </div>
+            </div>
+
+            <!-- League Selector -->
+            <div class="league-selector">
+                <h2 class="section-title">
+                    <span class="material-symbols-outlined">sports_soccer</span>
+                    SELECT LEAGUE
+                </h2>
+                <div class="league-buttons" id="league-buttons">
+                    <!-- League buttons will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            <span class="material-symbols-outlined">filter_list</span>
+                            FILTER BY STATUS
+                        </h3>
+                        <div class="filter-buttons" id="status-filters">
+                            <button class="filter-btn active" data-filter="all">ALL STATUS</button>
+                            <button class="filter-btn" data-filter="completed">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                COMPLETED
+                            </button>
+                            <button class="filter-btn" data-filter="pending">
+                                <span class="material-symbols-outlined">schedule</span>
+                                PENDING
+                            </button>
+                            <button class="filter-btn" data-filter="rumored">
+                                <span class="material-symbols-outlined">help</span>
+                                RUMORED
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">
+                            <span class="material-symbols-outlined">category</span>
+                            FILTER BY TYPE
+                        </h3>
+                        <div class="filter-buttons" id="type-filters">
+                            <button class="filter-btn active" data-filter="all">ALL TYPES</button>
+                            <button class="filter-btn" data-filter="permanent">
+                                <span class="material-symbols-outlined">home</span>
+                                PERMANENT
+                            </button>
+                            <button class="filter-btn" data-filter="loan">
+                                <span class="material-symbols-outlined">swap_horiz</span>
+                                LOAN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transfer Count -->
+            <div class="transfer-count">
+                <div class="count-info">
+                    <div class="count-text" id="count-text">
+                        <span class="material-symbols-outlined">analytics</span>
+                        SHOWING 0 TRANSFERS
+                    </div>
+                    <div class="league-name" id="current-league-name">PREMIER LEAGUE</div>
+                </div>
+            </div>
+
+            <!-- Transfers Grid -->
+            <div class="transfers-grid" id="transfers-grid">
+                <!-- Transfer cards will be populated by JavaScript -->
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results hidden" id="no-results">
+                <div class="no-results-icon">
+                    <span class="material-symbols-outlined">search_off</span>
+                </div>
+                <div class="no-results-title">NO TRANSFERS FOUND</div>
+                <div class="no-results-subtitle">TRY ADJUSTING YOUR FILTERS</div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-text">
+                    <span class="material-symbols-outlined">update</span>
+                    UPDATED EVERY 15 MINUTES • FOLLOW @TRANSFERWINDOW
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
