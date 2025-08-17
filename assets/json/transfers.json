@@ -1,0 +1,170 @@
+{
+  "leagues": [
+    { "id": "epl", "name": "Premier League", "country": "England", "shortName": "EPL" },
+    { "id": "laliga", "name": "La Liga", "country": "Spain", "shortName": "LAL" },
+    { "id": "bundesliga", "name": "Bundesliga", "country": "Germany", "shortName": "BUN" },
+    { "id": "seriea", "name": "Serie A", "country": "Italy", "shortName": "SER" },
+    { "id": "ligue1", "name": "Ligue 1", "country": "France", "shortName": "L1" },
+    { "id": "eredivisie", "name": "Eredivisie", "country": "Netherlands", "shortName": "ERE" },
+    { "id": "primeira", "name": "Primeira Liga", "country": "Portugal", "shortName": "PRI" }
+  ],
+  "transfers": {
+    "epl": [
+      {
+        "id": "1",
+        "playerName": "Kylian Mbappé",
+        "fromTeam": "PSG",
+        "toTeam": "Real Madrid",
+        "fee": "FREE",
+        "position": "RW",
+        "age": 25,
+        "nationality": "FRA",
+        "date": "JUL 2024",
+        "type": "permanent",
+        "status": "completed"
+      },
+      {
+        "id": "2",
+        "playerName": "Erling Haaland",
+        "fromTeam": "Man City",
+        "toTeam": "Barcelona",
+        "fee": "€180M",
+        "position": "ST",
+        "age": 24,
+        "nationality": "NOR",
+        "date": "JAN 2025",
+        "type": "permanent",
+        "status": "rumored"
+      },
+      {
+        "id": "3",
+        "playerName": "Jadon Sancho",
+        "fromTeam": "Man United",
+        "toTeam": "Juventus",
+        "fee": "€40M",
+        "position": "LW",
+        "age": 24,
+        "nationality": "ENG",
+        "date": "AUG 2024",
+        "type": "loan",
+        "status": "completed"
+      }
+    ],
+    "laliga": [
+      {
+        "id": "4",
+        "playerName": "Pedri González",
+        "fromTeam": "Barcelona",
+        "toTeam": "Man City",
+        "fee": "€120M",
+        "position": "CM",
+        "age": 22,
+        "nationality": "ESP",
+        "date": "JUN 2025",
+        "type": "permanent",
+        "status": "pending"
+      },
+      {
+        "id": "5",
+        "playerName": "Vinícius Jr.",
+        "fromTeam": "Real Madrid",
+        "toTeam": "PSG",
+        "fee": "€200M",
+        "position": "LW",
+        "age": 24,
+        "nationality": "BRA",
+        "date": "JUL 2025",
+        "type": "permanent",
+        "status": "rumored"
+      }
+    ],
+    "bundesliga": [
+      {
+        "id": "6",
+        "playerName": "Jamal Musiala",
+        "fromTeam": "Bayern Munich",
+        "toTeam": "Liverpool",
+        "fee": "€90M",
+        "position": "CAM",
+        "age": 21,
+        "nationality": "GER",
+        "date": "AUG 2024",
+        "type": "permanent",
+        "status": "completed"
+      },
+      {
+        "id": "7",
+        "playerName": "Jude Bellingham",
+        "fromTeam": "Real Madrid",
+        "toTeam": "Man City",
+        "fee": "€150M",
+        "position": "CM",
+        "age": 21,
+        "nationality": "ENG",
+        "date": "JAN 2025",
+        "type": "permanent",
+        "status": "rumored"
+      }
+    ],
+    "seriea": [
+      {
+        "id": "8",
+        "playerName": "Rafael Leão",
+        "fromTeam": "AC Milan",
+        "toTeam": "Chelsea",
+        "fee": "€70M",
+        "position": "LW",
+        "age": 25,
+        "nationality": "POR",
+        "date": "JAN 2025",
+        "type": "permanent",
+        "status": "pending"
+      }
+    ],
+    "ligue1": [
+      {
+        "id": "9",
+        "playerName": "Warren Zaïre-Emery",
+        "fromTeam": "PSG",
+        "toTeam": "Arsenal",
+        "fee": "€50M",
+        "position": "CM",
+        "age": 18,
+        "nationality": "FRA",
+        "date": "JUL 2025",
+        "type": "permanent",
+        "status": "rumored"
+      }
+    ],
+    "eredivisie": [
+      {
+        "id": "10",
+        "playerName": "Xavi Simons",
+        "fromTeam": "PSG",
+        "toTeam": "Ajax",
+        "fee": "€25M",
+        "position": "CAM",
+        "age": 21,
+        "nationality": "NED",
+        "date": "AUG 2024",
+        "type": "loan",
+        "status": "completed"
+      }
+    ],
+    "primeira": [
+      {
+        "id": "11",
+        "playerName": "Viktor Gyökeres",
+        "fromTeam": "Sporting CP",
+        "toTeam": "Arsenal",
+        "fee": "€60M",
+        "position": "ST",
+        "age": 26,
+        "nationality": "SWE",
+        "date": "JAN 2025",
+        "type": "permanent",
+        "status": "pending"
+      }
+    ]
+  }
+}
