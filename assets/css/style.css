@@ -10,596 +10,180 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #fff;
+    color: #000;
     line-height: 1.5;
 }
 
-/* Material Symbols Global Styling */
+/* Material Symbols */
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 24;
     font-size: inherit;
     vertical-align: middle;
-    margin-right: 8px;
 }
 
+/* App Container */
 .app {
     min-height: 100vh;
-    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 32px 16px;
+    padding: 16px;
 }
 
 /* Header */
 .header {
-    border: 8px solid #000000;
-    background-color: #d6ad60;
-    padding: 32px;
-    box-shadow: 16px 16px 0px 0px #000000;
-    margin-bottom: 32px;
     text-align: center;
+    border-bottom: 4px solid #000;
+    padding: 24px 8px;
+    background: #d6ad60;
 }
 
 .header-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 900;
-    letter-spacing: -0.02em;
     text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-.live-indicator {
-    margin-top: 16px;
+    letter-spacing: -0.01em;
 }
 
 .live-badge {
+    margin-top: 12px;
     display: inline-flex;
     align-items: center;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 4px solid #000000;
-    font-weight: 900;
+    padding: 6px 12px;
+    background: #000;
+    color: #fff;
+    font-weight: 800;
     font-size: 0.875rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    border: 2px solid #000;
 }
 
 .live-badge .material-symbols-outlined {
-    color: #ff0000;
-    animation: pulse 2s infinite;
+    color: red;
+    margin-right: 6px;
+    animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
-/* League Selector */
-.league-selector {
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    padding: 24px;
-    box-shadow: 8px 8px 0px 0px #000000;
-    margin-bottom: 32px;
-}
-
-.section-title {
+/* Timeline Feed */
+.feed {
     display: flex;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
-}
-
-.section-title .material-symbols-outlined {
-    font-size: 2rem;
-    color: #d6ad60;
-}
-
-.league-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    flex-direction: column;
     gap: 16px;
+    margin-top: 24px;
 }
 
-.league-btn {
-    height: auto;
+/* Transfer Item */
+.transfer-item {
+    border-left: 6px solid #000;
     padding: 16px;
-    border: 4px solid #000000;
-    font-weight: 900;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background-color: #ffffff;
-    color: #000000;
-    cursor: pointer;
-    box-shadow: 4px 4px 0px 0px #000000;
-    transition: all 0.2s ease;
-    text-align: center;
+    background: #fff;
+    position: relative;
 }
 
-.league-btn:hover,
-.league-btn.active {
-    background-color: #d6ad60;
-    color: #000000;
-    box-shadow: 6px 6px 0px 0px #000000;
-    transform: translate(-2px, -2px);
+.transfer-item::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #000;
 }
 
-.league-btn-name {
-    font-size: 1.125rem;
-    font-weight: 900;
-    margin-bottom: 4px;
+/* Status Colours */
+.transfer-item.confirmed {
+    border-left-color: green;
 }
 
-.league-btn-country {
-    font-size: 0.75rem;
-    opacity: 0.8;
+.transfer-item.confirmed::before {
+    background: green;
 }
 
-/* Filters */
-.filters {
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    padding: 24px;
-    box-shadow: 8px 8px 0px 0px #000000;
-    margin-bottom: 32px;
+.transfer-item.ongoing {
+    border-left-color: goldenrod;
 }
 
-.filter-group {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
+.transfer-item.ongoing::before {
+    background: goldenrod;
 }
 
-@media (min-width: 1024px) {
-    .filter-group {
-        grid-template-columns: 1fr 1fr;
-    }
+.transfer-item.failed {
+    border-left-color: red;
 }
 
-.filter-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    margin-bottom: 16px;
+.transfer-item.failed::before {
+    background: red;
 }
 
-.filter-title .material-symbols-outlined {
-    font-size: 1.5rem;
-    color: #d6ad60;
-}
-
-.filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.filter-btn {
-    display: flex;
-    align-items: center;
-    border: 2px solid #000000;
-    font-weight: 700;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 8px 16px;
-    background-color: #ffffff;
-    color: #000000;
-    cursor: pointer;
-    box-shadow: 2px 2px 0px 0px #000000;
-    transition: all 0.2s ease;
-}
-
-.filter-btn .material-symbols-outlined {
-    font-size: 16px;
-    margin-right: 6px;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background-color: #d6ad60;
-    color: #000000;
-    box-shadow: 4px 4px 0px 0px #000000;
-    transform: translate(-2px, -2px);
-}
-
-/* Transfer Count */
-.transfer-count {
-    border: 4px solid #000000;
-    background-color: #f5f5f5;
-    padding: 16px;
-    margin-bottom: 32px;
-}
-
-.count-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.count-text {
-    display: flex;
-    align-items: center;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.count-text .material-symbols-outlined {
-    color: #d6ad60;
-    font-size: 1.2rem;
-}
-
-.league-name {
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-/* Transfers Grid */
-.transfers-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
-}
-
-@media (min-width: 1024px) {
-    .transfers-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1280px) {
-    .transfers-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Transfer Card */
-.transfer-card {
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    padding: 24px;
-    box-shadow: 8px 8px 0px 0px #000000;
-    transition: box-shadow 0.2s ease;
-}
-
-.transfer-card:hover {
-    box-shadow: 12px 12px 0px 0px #000000;
-}
-
-.transfer-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 16px;
-}
-
-.player-info {
-    flex: 1;
-}
-
+/* Content */
 .player-name {
     font-size: 1.5rem;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: -0.01em;
     margin-bottom: 4px;
 }
 
-.player-details {
-    display: flex;
-    align-items: center;
+.transfer-meta {
     font-size: 0.875rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #666666;
+    color: #444;
+    margin-bottom: 8px;
 }
 
-.player-details .material-symbols-outlined {
-    font-size: 16px;
-    margin-right: 4px;
-    color: #d6ad60;
+.transfer-meta span {
+    margin-right: 12px;
 }
 
-.transfer-badges {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-end;
-}
-
-.badge {
-    display: flex;
-    align-items: center;
+.transfer-details {
     font-weight: 700;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 4px 12px;
-    border: 2px solid #000000;
-}
-
-.badge .material-symbols-outlined {
-    font-size: 14px;
-    margin-right: 4px;
-}
-
-.badge-completed {
-    background-color: #d6ad60;
-    color: #000000;
-}
-
-.badge-pending {
-    background-color: #f5f5f5;
-    color: #666666;
-    border-style: solid;
-}
-
-.badge-rumored {
-    background-color: #f5f5f5;
-    color: #666666;
-    border-style: dashed;
-}
-
-.badge-loan {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.badge-permanent {
-    background-color: #d6ad60;
-    color: #000000;
-}
-
-/* Transfer Movement */
-.transfer-movement {
-    border: 4px solid #000000;
-    background-color: #f5f5f5;
-    padding: 16px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team-section {
-    text-align: center;
-    flex: 1;
-}
-
-.team-label {
-    font-weight: 900;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    font-size: 1rem;
     margin-bottom: 4px;
 }
 
-.team-name {
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-
-.transfer-arrow {
-    margin: 0 16px;
+/* Club Names + Arrow */
+.club-move {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    gap: 8px;
 }
 
-.transfer-arrow .material-symbols-outlined {
-    font-size: 2rem;
-    color: #000000;
-    margin: 0;
+.club-move .material-symbols-outlined {
+    font-size: 1.5rem;
     font-variation-settings: 'FILL' 1, 'wght' 900;
 }
 
-/* Transfer Footer */
+/* Footer Info */
 .transfer-footer {
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.fee-info {
-    background-color: #d6ad60;
-    color: #000000;
-    padding: 8px 16px;
-    border: 2px solid #000000;
-}
-
-.fee-label {
-    display: flex;
-    align-items: center;
-    font-weight: 900;
     font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.fee-label .material-symbols-outlined {
-    font-size: 14px;
-    margin-right: 4px;
-}
-
-.fee-amount {
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-
-.transfer-date {
-    text-align: right;
-}
-
-.date-text {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.date-text .material-symbols-outlined {
-    font-size: 16px;
-    color: #d6ad60;
-}
-
-/* No Results */
-.no-results {
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    padding: 48px;
-    text-align: center;
-    box-shadow: 8px 8px 0px 0px #000000;
-}
-
-.no-results-icon {
-    margin-bottom: 16px;
-}
-
-.no-results-icon .material-symbols-outlined {
-    font-size: 4rem;
-    color: #666666;
-    margin: 0;
-}
-
-.no-results-title {
-    font-size: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    margin-bottom: 16px;
-}
-
-.no-results-subtitle {
-    color: #666666;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: #555;
 }
 
-/* Footer */
-.footer {
-    margin-top: 64px;
-    border: 4px solid #000000;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 24px;
-    text-align: center;
-}
-
-.footer-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.footer-text .material-symbols-outlined {
-    color: #d6ad60;
-}
-
-/* Utility Classes */
-.hidden {
-    display: none;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        padding: 16px 8px;
-    }
-
-    .header {
-        padding: 16px;
-    }
-
+/* Mobile */
+@media (max-width: 600px) {
     .header-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
-
-    .league-buttons {
-        grid-template-columns: repeat(2, 1fr);
+    .player-name {
+        font-size: 1.25rem;
     }
-
-    .count-info {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-    }
-
-    .transfer-movement {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .transfer-arrow {
-        margin: 0;
-    }
-
-    .transfer-arrow .material-symbols-outlined {
-        transform: rotate(90deg);
-    }
-
-    .transfer-footer {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
-
-    .filter-group {
-        grid-template-columns: 1fr;
-    }
-
-    .filter-buttons {
-        justify-content: center;
-    }
-
-    .section-title,
-    .filter-title {
-        justify-content: center;
-    }
-}
-
-/* Additional Icon Styles */
-.player-details::before {
-    content: "person";
-    font-family: 'Material Symbols Outlined';
-    font-size: 16px;
-    margin-right: 4px;
-    color: #d6ad60;
-}
-
-.team-label::after {
-    content: attr(data-icon);
-    font-family: 'Material Symbols Outlined';
-    font-size: 14px;
-    margin-left: 4px;
 }
