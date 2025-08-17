@@ -137,7 +137,7 @@
                 "playerName": "Christian Nørgaard",
                 "fromTeam": "Brentford",
                 "toTeam": "Arsenal",
-                "fee": "€11.6M",
+                "fee": "€11.60m",
                 "position": "DM",
                 "age": 31,
                 "nationality": "DEN",
@@ -150,7 +150,7 @@
                 "playerName": "Kepa Arrizabalaga",
                 "fromTeam": "Chelsea",
                 "toTeam": "Arsenal",
-                "fee": "€5.8M",
+                "fee": "€5.80m",
                 "position": "GK",
                 "age": 30,
                 "nationality": "ESP",
@@ -248,6 +248,19 @@
                 "date": "JUL 2025",
                 "type": "permanent",
                 "status": "completed"
+            },
+            {
+                "id": "13",
+                "playerName": "Reiss Nelson",
+                "fromTeam": "Fulham",
+                "toTeam": "Arsenal",
+                "fee": "End of loan",
+                "position": "RW",
+                "age": 25,
+                "nationality": "ENG",
+                "date": "JUN 2025",
+                "type": "loan_return",
+                "status": "completed"
             }
         ],
         "laliga": [
@@ -262,6 +275,32 @@
                 "nationality": "ENG",
                 "date": "JUL 2025",
                 "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Albert Sambi Lokonga",
+                "fromTeam": "Arsenal",
+                "toTeam": "Sevilla FC",
+                "fee": "End of loan",
+                "position": "CM",
+                "age": 25,
+                "nationality": "BEL",
+                "date": "JUN 2025",
+                "type": "loan_return",
+                "status": "completed"
+            },
+            {
+                "id": "3",
+                "playerName": "Karl Hein",
+                "fromTeam": "Arsenal",
+                "toTeam": "Real Valladolid",
+                "fee": "End of loan",
+                "position": "GK",
+                "age": 23,
+                "nationality": "EST",
+                "date": "JUN 2025",
+                "type": "loan_return",
                 "status": "completed"
             }
         ],
@@ -292,6 +331,19 @@
                 "nationality": "ECU",
                 "date": "JUL 2025",
                 "type": "permanent",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Nuno Tavares",
+                "fromTeam": "Arsenal",
+                "toTeam": "Lazio",
+                "fee": "End of loan",
+                "position": "LB",
+                "age": 25,
+                "nationality": "POR",
+                "date": "JUN 2025",
+                "type": "loan_return",
                 "status": "completed"
             }
         ],
@@ -351,6 +403,19 @@
                 "date": "JUL 2025",
                 "type": "free",
                 "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Fábio Vieira",
+                "fromTeam": "Arsenal",
+                "toTeam": "FC Porto",
+                "fee": "End of loan",
+                "position": "AM",
+                "age": 25,
+                "nationality": "POR",
+                "date": "JUN 2025",
+                "type": "loan_return",
+                "status": "completed"
             }
         ],
         "saudi": [
@@ -395,6 +460,19 @@
                 "nationality": "ITA",
                 "date": "JUL 2025",
                 "type": "free",
+                "status": "completed"
+            },
+            {
+                "id": "2",
+                "playerName": "Marquinhos",
+                "fromTeam": "Arsenal",
+                "toTeam": "Cruzeiro",
+                "fee": "End of loan",
+                "position": "RW",
+                "age": 22,
+                "nationality": "BRA",
+                "date": "JUN 2025",
+                "type": "loan_return",
                 "status": "completed"
             }
         ],
